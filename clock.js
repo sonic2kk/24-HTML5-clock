@@ -43,7 +43,3 @@ function isFirefox() {
         document.getElementById('clock').className = 'firefox'
     }
 }
-
-function playTick() {
-
-}
