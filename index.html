@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title></title>
+
+		<link href='style.css' rel='stylesheet' type='text/css' />
+		<script src='clock.js'></script>
+	</head>
+
+	<body onload='tickDown(); isFirefox()'>
+		<!-- Clock tick noise -->
+		<audio id='beepHigh' src='audio/beepHigh.ogg'></audio>
+        <audio id='beepLow' src='audio/beepLow.ogg'></audio>
+
+		<p id='clock' class='not_firefox'></p>
+	</body>
+</html>
