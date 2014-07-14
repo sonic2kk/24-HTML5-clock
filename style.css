@@ -1,13 +1,16 @@
+/* Body background colour */
 body {
     background-color: black;
 }
 
+/* Loading the DS-DIGITAL font faces for all browsers */
 @font-face {
     font-family: 'DSDIGI';
     src: url('fonts/DSDIGI.eot');
     src: local('DSDIGI'), url('fonts/DSDIGI.woff') format('woff'), url('fonts/DSDIGI.ttf') format('truetype');
 }
 
+/* Default styles for the clock text, no matter what browser the user is on */
 #clock {
     font-family: 'DSDIGI';
     font-size: 150px;
@@ -22,6 +25,8 @@ body {
     text-align: center;
 }
 
+/* If the user is not on Firefox, add gradients */
+/* This is because right now Firefox does not support text gradients */
 .not_firefox {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjk5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZkZDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background-image: -moz-radial-gradient(center, ellipse cover,  #ff9900 0%, #ffdd00 100%);
@@ -32,6 +37,7 @@ body {
     background-image: radial-gradient(ellipse at center,  #ff9900 0%,#ffdd00 100%);
 }
 
+/* If the user is on Firefox, just make the text a solid colour */
 .firefox {
     color: #ff9900;
 }
